@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Persistence Tab
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PERSISTENCE ADDED</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="This tab's button counter is persistent across orientation changes"></app-explore-container>
+
+  <ion-button color="primary" (click)="btnClicked()">{{btnCount}}</ion-button>
+  <ion-label>&lt;=Click it!</ion-label>
+
+<!--   <ion-button (click)="getCounter()">GetCount {{myCounter}}</ion-button> -->
+
+</ion-content>
